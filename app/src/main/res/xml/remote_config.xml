@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <!-- training object -->
+    <entry>
+        <key>training_object</key>
+        <value>truck</value>
+    </entry>
+    <!-- train if above confidence threshold -->
+    <entry>
+        <key>confidence_threshold</key>
+        <value>60</value>
+    </entry>
+    <!-- All timing values are in seconds -->
+
+    <!-- delay between individual image push, no point in having nearly same image
+     we are not over populating, we are sending only for mentioned object at given
+     confidence threshold-->
+    <entry>
+        <key>delay</key>
+        <value>5</value>
+    </entry>
+    <!-- pause for secs after each 10 images set TODO: not using as of now-->
+    <entry>
+        <key>pause</key>
+        <value>60</value>
+    </entry>
+    <!-- training object -->
+    <entry>
+        <key>count</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>fetch_cache_expire</key>
+        <value>7200</value>
+    </entry>
+
+    <!--TODO: This feature is implemented in separate application and will be integrated.
+    Added this placeholder to have it in back of head about concept.
+
+    Basic idea is to provide feed to cloud on real on filed picture and after update, let application
+    notify based on those trained data. Still keep feeking keeping up to the cloud to improve accuracy.
+
+    Kept application separate to easy in stabilize, keep it simple for anyone to use-->
+    <entry>
+        <key>notify_on</key>
+        <value>license plate</value>
+    </entry>
+</defaultsMap>

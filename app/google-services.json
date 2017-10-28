@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "775276938066",
+    "firebase_url": "https://android-a9770.firebaseio.com",
+    "project_id": "android-a9770",
+    "storage_bucket": "android-a9770.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775276938066:android:b01db18433589acd",
+        "android_client_info": {
+          "package_name": "org.tensorflow.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775276938066-kpgnq4hkl9a2976cm507mg5p7gh01huo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tensorflow.demo",
+            "certificate_hash": "97adf9f21b0a5652055dda78973f2f304c3195b4"
+          }
+        },
+        {
+          "client_id": "775276938066-6vcpgjqd5jd7qhop24pr1dhltd1aphma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-gxG5vDoQJIjxJsRegFOw5pwj-t8AfHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775276938066-6vcpgjqd5jd7qhop24pr1dhltd1aphma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775276938066:android:9d99916ba6091158",
+        "android_client_info": {
+          "package_name": "com.example.androidthings.imageclassifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775276938066-d1mvfiiq03aip3tqctrotkv4di9eg332.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidthings.imageclassifier",
+            "certificate_hash": "97adf9f21b0a5652055dda78973f2f304c3195b4"
+          }
+        },
+        {
+          "client_id": "775276938066-6vcpgjqd5jd7qhop24pr1dhltd1aphma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-gxG5vDoQJIjxJsRegFOw5pwj-t8AfHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775276938066-6vcpgjqd5jd7qhop24pr1dhltd1aphma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775276938066:android:894a822083d32b72",
+        "android_client_info": {
+          "package_name": "com.example.androidthings.aicamera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775276938066-6vcpgjqd5jd7qhop24pr1dhltd1aphma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-gxG5vDoQJIjxJsRegFOw5pwj-t8AfHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

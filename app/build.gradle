@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'de.undercouch.download'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId = 'com.example.androidthings.imageclassifier'
+        minSdkVersion 24
+        targetSdkVersion 25
+    }
+    buildTypes {
+        release {
+            minifyEnabled = false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['./assets']
+        }
+    }
+}
+import de.undercouch.gradle.tasks.download.Download
+
+task downloadFile(type: Download) {
+    src 'https://github.com/abhishekkumardwivedi/inception_retrained/archive/master.zip'
+    dest projectDir.toString() + '/../../assets/inception.zip'
+}
+task unzip(type: Copy) {
+    from zipTree(projectDir.toString() + '/../../assets/inception.zip')
+    into file(projectDir.toString() + '/assets')
+}
+unzip.dependsOn downloadFile
+
+project.afterEvaluate {
+    if (!(new File(projectDir.toString() + '/assets')).exists()) {
+        preBuild.dependsOn unzip
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-config:11.0.4'
+    implementation 'com.google.firebase:firebase-storage:11.0.4'
+    implementation 'com.google.firebase:firebase-auth:11.0.4'
+    compile 'com.google.android.things.contrib:driver-button:0.3'
+    compile 'org.tensorflow:tensorflow-android:1.2.0'
+    provided 'com.google.android.things:androidthings:0.4.1-devpreview'
+}
+
+apply plugin: 'com.google.gms.google-services'
